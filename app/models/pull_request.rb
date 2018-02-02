@@ -55,7 +55,7 @@ class PullRequest < ActiveRecord::Base
       page = 1
       files_tmp = []
       loop do
-        files = fetch_file_page(page)
+        files = fetch_file_page(page).select { |f| f.changes.positive? }
         files_tmp.concat(files)
         break if files.length == 0
         page += 1
