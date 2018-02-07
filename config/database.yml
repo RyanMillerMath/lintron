@@ -8,7 +8,7 @@ default: &default
   adapter: postgresql
   pool: 5
   timeout: 5000
-  host: localhost
+  host: lintron-test.herokuapp.com
   username: ryguy
   password: Neumann1945
 
