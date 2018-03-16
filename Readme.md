@@ -28,6 +28,10 @@ To override linter settings, use the configuration file for the linter. For glob
 
 Lintron uses webhooks to know when a PR has been created or updated. You'll need to set up the webhook on each repo you want Lintron to monitor.
 
+Log into your Lintron instance with your GitHub credentials. You will be taken to a page (`/hooks`) where you can attach Lintron's required hooks to a repo.
+
+Alternatively, you can set up the webhooks manually:
+
 ![Webhooks](https://raw.githubusercontent.com/prehnRA/lintron/master/960px-Webhook3.png)
 
 The webhook url will be https://yourlintronhost/github_webhooks. The secret will be the one you set in your .env file. Lintron needs to be on a publicly reachable host to receive webhooks.
